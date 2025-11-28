@@ -1,0 +1,219 @@
+{
+  "symptoms": {
+    "abdominal": {
+      "upper_abdomen": {
+        "after_meals": {
+          "worsens_after_eating": "SYP_001",
+          "relieved_by_antacids": "SYP_002",
+          "unaffected": "SYP_003"
+        },
+        "on_empty_stomach": "SYP_004",
+        "constant": "SYP_005",
+        "night_time": "SYP_006"
+      },
+      "lower_abdomen": "SYP_007",
+      "right_side": "SYP_008",
+      "left_side": "SYP_009",
+      "whole_abdomen": "SYP_010"
+    },
+    "heartburn_acidity": {
+      "after_meals": "SYP_011",
+      "when_lying_down": "SYP_012",
+      "constant": "SYP_013"
+    },
+    "nausea_vomiting": {
+      "after_meals": "SYP_014",
+      "on_empty_stomach": "SYP_015",
+      "provides_relief": "SYP_016",
+      "with_fever": "SYP_017"
+    },
+    "bowel_movements": {
+      "constipation": "SYP_018",
+      "diarrhea": "SYP_019",
+      "alternating_constipation_diarrhea": "SYP_020",
+      "bloody_stools": "SYP_021",
+      "mucus_in_stools": "SYP_022",
+      "straining": "SYP_023",
+      "urgency": "SYP_024"
+    },
+    "other": {
+      "bloating": "SYP_025",
+      "belching": "SYP_026",
+      "loss_of_appetite": "SYP_027",
+      "fever": "SYP_028",
+      "jaundice": "SYP_029",
+      "painful_bowel_movement": "SYP_030"
+    }
+  },
+
+  "diseases": [
+    {
+      "id": "DIS_01",
+      "name": "Gastritis",
+      "symptoms": ["SYP_001", "SYP_003", "SYP_005", "SYP_011", "SYP_014", "SYP_025", "SYP_026", "SYP_015"]
+    },
+    {
+      "id": "DIS_02",
+      "name": "Peptic Ulcer Disease",
+      "symptoms": ["SYP_004", "SYP_006", "SYP_002", "SYP_015", "SYP_016", "SYP_001", "SYP_005"]
+    },
+    {
+      "id": "DIS_03",
+      "name": "Gastroesophageal Reflux Disease (GERD)",
+      "symptoms": ["SYP_001", "SYP_011", "SYP_012", "SYP_026", "SYP_014", "SYP_013"]
+    },
+    {
+      "id": "DIS_04",
+      "name": "Irritable Bowel Syndrome (IBS)",
+      "symptoms": ["SYP_007", "SYP_020", "SYP_022", "SYP_025", "SYP_018", "SYP_019", "SYP_010", "SYP_023"]
+    },
+    {
+      "id": "DIS_05",
+      "name": "Constipation",
+      "symptoms": ["SYP_018", "SYP_023", "SYP_007", "SYP_025", "SYP_010"]
+    },
+    {
+      "id": "DIS_06",
+      "name": "Diarrhea (Acute Infectious)",
+      "symptoms": ["SYP_019", "SYP_024", "SYP_010", "SYP_017", "SYP_028", "SYP_014"]
+    },
+    {
+      "id": "DIS_07",
+      "name": "Amoebiasis / Giardiasis",
+      "symptoms": ["SYP_019", "SYP_021", "SYP_022", "SYP_010", "SYP_028", "SYP_024", "SYP_007"]
+    },
+    {
+      "id": "DIS_08",
+      "name": "Food Poisoning",
+      "symptoms": ["SYP_019", "SYP_014", "SYP_017", "SYP_028", "SYP_010", "SYP_024", "SYP_025"]
+    },
+    {
+      "id": "DIS_09",
+      "name": "Lactose Intolerance",
+      "symptoms": ["SYP_019", "SYP_025", "SYP_010", "SYP_014", "SYP_024"]
+    },
+    {
+      "id": "DIS_10",
+      "name": "Hemorrhoids (Piles)",
+      "symptoms": ["SYP_023", "SYP_021", "SYP_030", "SYP_018"]
+    },
+    {
+      "id": "DIS_11",
+      "name": "Anal Fissure",
+      "symptoms": ["SYP_030", "SYP_023", "SYP_021", "SYP_018"]
+    },
+    {
+      "id": "DIS_12",
+      "name": "Helicobacter pylori Infection",
+      "symptoms": ["SYP_001", "SYP_004", "SYP_005", "SYP_025", "SYP_026", "SYP_011", "SYP_014"]
+    },
+    {
+      "id": "DIS_13",
+      "name": "Viral Hepatitis A & E",
+      "symptoms": ["SYP_009", "SYP_029", "SYP_014", "SYP_027", "SYP_028", "SYP_010", "SYP_001"]
+    },
+    {
+      "id": "DIS_14",
+      "name": "Gastroenteritis",
+      "symptoms": ["SYP_010", "SYP_019", "SYP_014", "SYP_028", "SYP_017", "SYP_024", "SYP_025"]
+    },
+    {
+      "id": "DIS_15",
+      "name": "Gallstones (Cholelithiasis)",
+      "symptoms": ["SYP_008", "SYP_001", "SYP_014", "SYP_029", "SYP_005", "SYP_006"]
+    }
+  ],
+
+  "treatments": {
+    "DIS_01": {
+      "allopathy": ["Antacids (1-2 tablets after meals and at bedtime)", "Acid reducers like Omeprazole (1 tablet daily before breakfast)", "Antibiotics if infection present (as prescribed by doctor)"],
+      "homeopathy": ["Nux Vomica (2 pills 3 times daily)", "Arsenicum Album (2 pills 3 times daily)", "Carbo Veg (2 pills 3 times daily)"],
+      "ayurveda": ["Amla powder (1 teaspoon twice daily with water)", "Licorice powder (1/2 teaspoon twice daily)", "Avipattikar Churna (1 teaspoon at bedtime)"],
+      "home_remedy": "Ginger tea 2-3 times daily, cold milk, avoid spicy foods and alcohol"
+    },
+    "DIS_02": {
+      "allopathy": ["Acid reducers like Omeprazole (1 tablet daily)", "Antibiotics combination (as prescribed by doctor for 2 weeks)", "Ulcer protective medicines (as prescribed)"],
+      "homeopathy": ["Argentum Nitricum (2 pills 3 times daily)", "Kali Bichromicum (2 pills 3 times daily)", "Nux Vomica (2 pills 3 times daily)"],
+      "ayurveda": ["Avipattikar Churna (1 teaspoon twice daily)", "Sukumaram Kashayam (15ml twice daily after food)"],
+      "home_remedy": "Raw banana daily, cabbage juice empty stomach, honey with warm water"
+    },
+    "DIS_03": {
+      "allopathy": ["Acid reducers (1 tablet daily before food)", "Antacids (as needed after meals)", "Medicines to improve digestion (as prescribed)"],
+      "homeopathy": ["Robinia (2 pills 3 times daily)", "Natrum Phos (2 pills 3 times daily)", "Carbo Veg (2 pills 3 times daily)"],
+      "ayurveda": ["Amla powder (1 teaspoon daily)", "Shankh Bhasma (125mg twice daily with honey)"],
+      "home_remedy": "Chew fennel seeds after meals, aloe vera juice daily, elevate head while sleeping"
+    },
+    "DIS_04": {
+      "allopathy": ["Stomach cramp relievers (as needed)", "Fiber supplements (1 tablespoon daily)", "Probiotics (1 capsule daily)", "Anti-diarrhea medicine (when needed)"],
+      "homeopathy": ["Lycopodium (2 pills 3 times daily)", "Colocynthis (2 pills during pain)", "Nux Vomica (2 pills 3 times daily)"],
+      "ayurveda": ["Hingvastak Churna (1 teaspoon twice daily with warm water)", "Bilwadi Churna (1 teaspoon twice daily)"],
+      "home_remedy": "Peppermint tea daily, psyllium husk with warm water, stress management"
+    },
+    "DIS_05": {
+      "allopathy": ["Psyllium husk (1 tablespoon daily with water)", "Lactulose syrup (15-30ml daily at bedtime)", "Stool softeners (as directed)"],
+      "homeopathy": ["Alumina (2 pills at bedtime)", "Bryonia (2 pills 3 times daily)", "Nux Vomica (2 pills 3 times daily)"],
+      "ayurveda": ["Triphala Churna (1 teaspoon at bedtime with warm water)", "Psyllium husk (1 tablespoon daily)"],
+      "home_remedy": "Warm water with lemon every morning, soaked prunes daily, high-fiber diet"
+    },
+    "DIS_06": {
+      "allopathy": ["ORS solution (after every loose motion)", "Antibiotics if needed (as prescribed)", "Probiotics (1 capsule twice daily)", "Anti-diarrhea medicine (when severe)"],
+      "homeopathy": ["Arsenicum Album (2 pills after every loose motion)", "Podophyllum (2 pills 3 times daily)", "China (2 pills 3 times daily)"],
+      "ayurveda": ["Kutajarishta (15ml twice daily with equal water)", "Bael fruit powder (1 teaspoon twice daily)"],
+      "home_remedy": "ORS after every loose motion, banana, boiled rice water, rest"
+    },
+    "DIS_07": {
+      "allopathy": ["Anti-parasite medicine (as prescribed by doctor for 5-7 days)", "Follow-up treatment (as directed by doctor)"],
+      "homeopathy": ["Mercurius Corrosivus (2 pills 3 times daily)", "China (2 pills 3 times daily)", "Alstonia (10 drops in water 3 times daily)"],
+      "ayurveda": ["Vidanga Churna (1/2 teaspoon twice daily)", "Kutaja bark powder (1 teaspoon twice daily)"],
+      "home_remedy": "Please consult doctor for proper prescription medicine"
+    },
+    "DIS_08": {
+      "allopathy": ["ORS solution (frequently in small sips)", "Antibiotics if severe (as prescribed)", "Medicine for vomiting (if prescribed)"],
+      "homeopathy": ["Arsenicum Album (2 pills every 2 hours)", "Pulsatilla (2 pills 3 times daily)", "Ipecac (2 pills for vomiting)"],
+      "ayurveda": ["Sanjivani Vati (2 tablets twice daily)", "Ginger tea with honey (3-4 times daily)"],
+      "home_remedy": "ORS solution, ginger tea, banana and rice diet, rest"
+    },
+    "DIS_09": {
+      "allopathy": ["Lactase enzyme tablets (1-2 tablets before dairy)", "Lactose-free milk products", "Calcium supplements (as needed)"],
+      "homeopathy": ["Lac Defloratum (2 pills before meals)", "Magnesia Muriatica (2 pills 3 times daily)"],
+      "ayurveda": ["Ginger with rock salt (small piece before meals)", "Buttermilk with cumin (daily)"],
+      "home_remedy": "Use soy or almond milk, try small amounts of yogurt and hard cheese"
+    },
+    "DIS_10": {
+      "allopathy": ["Warm sitz bath (15 minutes 2-3 times daily)", "Hydrocortisone cream (apply 2-3 times daily)", "Stool softeners (as directed)", "Pain relief cream (as needed)"],
+      "homeopathy": ["Aesculus (2 pills 3 times daily)", "Hamamelis (2 pills 3 times daily)", "Paeonia (2 pills 3 times daily)"],
+      "ayurveda": ["Triphala Guggulu (2 tablets twice daily)", "Pilex ointment (apply twice daily)"],
+      "home_remedy": "Warm sitz baths daily, witch hazel application, high-fiber diet"
+    },
+    "DIS_11": {
+      "allopathy": ["Stool softeners (daily)", "Lidocaine ointment (apply 3-4 times daily)", "Warm sitz baths (15 minutes 2-3 times daily)"],
+      "homeopathy": ["Nitric Acid (2 pills 3 times daily)", "Graphites (2 pills 3 times daily)", "Ratanhia (2 pills 3 times daily)"],
+      "ayurveda": ["Triphala Churna (1 teaspoon daily)", "Jatyadi oil (apply 2-3 times daily)"],
+      "home_remedy": "Warm sitz baths, drink 8-10 glasses water daily, high-fiber foods"
+    },
+    "DIS_12": {
+      "allopathy": ["Acid reducer + 2 antibiotics combination (as prescribed for 10-14 days)", "Follow doctor's prescription strictly"],
+      "homeopathy": ["Helicobacter pylori nosode (2 pills twice daily)", "Hydrastis (2 pills 3 times daily)", "Kali Bichromicum (2 pills 3 times daily)"],
+      "ayurveda": ["Amla and turmeric mixture (1 teaspoon twice daily)", "Chitrakadi Vati (2 tablets twice daily)"],
+      "home_remedy": "Please consult doctor for proper antibiotic treatment"
+    },
+    "DIS_13": {
+      "allopathy": ["Complete rest", "Plenty of fluids and ORS", "Balanced nutritious diet", "Avoid all medicines without prescription"],
+      "homeopathy": ["Chelidonium (2 pills 3 times daily)", "Carduus Marianus (2 pills 3 times daily)", "Lycopodium (2 pills 3 times daily)"],
+      "ayurveda": ["Bhumyamalaki juice (1 teaspoon twice daily)", "Kalmegh powder (1/4 teaspoon twice daily)"],
+      "home_remedy": "Sugarcane juice daily, coconut water, light easily digestible food, complete rest"
+    },
+    "DIS_14": {
+      "allopathy": ["ORS solution (after every loose motion)", "Complete rest", "Light diet gradually", "Probiotics (1 capsule daily)"],
+      "homeopathy": ["Arsenicum Album (2 pills after every loose motion)", "Veratrum Album (2 pills 3 times daily)", "Podophyllum (2 pills 3 times daily)"],
+      "ayurveda": ["Lavan Bhaskar Churna (1/4 teaspoon twice daily)", "Pomegranate juice (daily)"],
+      "home_remedy": "ORS solution, ginger tea, boiled potatoes and rice, rest"
+    },
+    "DIS_15": {
+      "allopathy": ["Surgery consultation recommended", "Pain management (as prescribed)", "Stone dissolving medicine (if suitable)"],
+      "homeopathy": ["Chelidonium (2 pills 3 times daily)", "Berberis (2 pills 3 times daily)", "Lycopodium (2 pills 3 times daily)"],
+      "ayurveda": ["Gokshuradi Guggulu (2 tablets twice daily)", "Punarnava Mandoor (2 tablets twice daily)"],
+      "home_remedy": "Please consult doctor for proper evaluation and treatment plan"
+    }
+  }
+}

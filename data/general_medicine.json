@@ -1,0 +1,224 @@
+{
+  "symptoms": {
+    "fever_chills": {
+      "mild_fever": "GM_001",
+      "high_fever": "GM_002",
+      "chills": "GM_003",
+      "night_sweats": "GM_004"
+    },
+    "respiratory": {
+      "cough": "GM_005",
+      "sore_throat": "GM_006",
+      "runny_nose": "GM_007",
+      "congestion": "GM_008",
+      "shortness_breath": "GM_009"
+    },
+    "head_neck": {
+      "headache": "GM_010",
+      "ear_pain": "GM_011",
+      "sinus_pressure": "GM_012",
+      "swollen_glands": "GM_013"
+    },
+    "digestive": {
+      "nausea": "GM_014",
+      "vomiting": "GM_015",
+      "diarrhea": "GM_016",
+      "abdominal_pain": "GM_017",
+      "loss_appetite": "GM_018"
+    },
+    "body_aches": {
+      "muscle_pain": "GM_019",
+      "joint_pain": "GM_020",
+      "body_weakness": "GM_021",
+      "fatigue": "GM_022"
+    },
+    "duration": {
+      "recent_3days": "GM_023",
+      "lasting_1week": "GM_024",
+      "chronic_2weeks": "GM_025",
+      "recurring": "GM_026"
+    },
+    "severity": {
+      "mild_symptoms": "GM_027",
+      "moderate_symptoms": "GM_028",
+      "severe_symptoms": "GM_029"
+    },
+    "other_symptoms": {
+      "dizziness": "GM_030",
+      "chest_pain": "GM_031",
+      "rash": "GM_032",
+      "eye_redness": "GM_033"
+    }
+  },
+
+  "diseases": [
+    {
+      "id": "GM_DIS_01",
+      "name": "Common Cold",
+      "symptoms": ["GM_005", "GM_007", "GM_008", "GM_006", "GM_001", "GM_019", "GM_022", "GM_023"]
+    },
+    {
+      "id": "GM_DIS_02",
+      "name": "Influenza (Flu)",
+      "symptoms": ["GM_002", "GM_003", "GM_019", "GM_022", "GM_005", "GM_014", "GM_015", "GM_010"]
+    },
+    {
+      "id": "GM_DIS_03",
+      "name": "Viral Fever",
+      "symptoms": ["GM_002", "GM_019", "GM_022", "GM_018", "GM_010", "GM_023"]
+    },
+    {
+      "id": "GM_DIS_04",
+      "name": "Sinusitis",
+      "symptoms": ["GM_012", "GM_008", "GM_007", "GM_010", "GM_011", "GM_024"]
+    },
+    {
+      "id": "GM_DIS_05",
+      "name": "Bronchitis",
+      "symptoms": ["GM_005", "GM_009", "GM_008", "GM_001", "GM_019", "GM_024"]
+    },
+    {
+      "id": "GM_DIS_06",
+      "name": "Strep Throat",
+      "symptoms": ["GM_006", "GM_013", "GM_002", "GM_010", "GM_018", "GM_028"]
+    },
+    {
+      "id": "GM_DIS_07",
+      "name": "Urinary Tract Infection (UTI)",
+      "symptoms": ["GM_031", "GM_016", "GM_017", "GM_002", "GM_028"]
+    },
+    {
+      "id": "GM_DIS_08",
+      "name": "Ear Infection",
+      "symptoms": ["GM_011", "GM_010", "GM_002", "GM_007", "GM_028"]
+    },
+    {
+      "id": "GM_DIS_09",
+      "name": "Pneumonia",
+      "symptoms": ["GM_005", "GM_009", "GM_002", "GM_003", "GM_019", "GM_015", "GM_029"]
+    },
+    {
+      "id": "GM_DIS_10",
+      "name": "Migraine Headache",
+      "symptoms": ["GM_010", "GM_014", "GM_030", "GM_032", "GM_029", "GM_026"]
+    },
+    {
+      "id": "GM_DIS_11",
+      "name": "Food Poisoning",
+      "symptoms": ["GM_014", "GM_015", "GM_016", "GM_017", "GM_001", "GM_022", "GM_023"]
+    },
+    {
+      "id": "GM_DIS_12",
+      "name": "Allergic Rhinitis",
+      "symptoms": ["GM_007", "GM_008", "GM_005", "GM_033", "GM_032", "GM_026"]
+    },
+    {
+      "id": "GM_DIS_13",
+      "name": "Conjunctivitis (Pink Eye)",
+      "symptoms": ["GM_033", "GM_007", "GM_032", "GM_011", "GM_027"]
+    },
+    {
+      "id": "GM_DIS_14",
+      "name": "Viral Gastroenteritis",
+      "symptoms": ["GM_016", "GM_014", "GM_015", "GM_017", "GM_001", "GM_019", "GM_022"]
+    },
+    {
+      "id": "GM_DIS_15",
+      "name": "Mononucleosis",
+      "symptoms": ["GM_022", "GM_013", "GM_002", "GM_006", "GM_019", "GM_024"]
+    }
+  ],
+
+  "treatments": {
+    "GM_DIS_01": {
+      "allopathy": ["Rest and plenty of fluids", "Pain relievers like Paracetamol (1 tablet every 6 hours)", "Decongestants (as needed)", "Throat lozenges for sore throat"],
+      "homeopathy": ["Aconitum 30C (2 pills at onset)", "Allium Cepa 30C (2 pills for runny nose)", "Gelsemium 30C (2 pills for body aches)"],
+      "ayurveda": ["Tulsi ginger tea (3-4 times daily)", "Turmeric milk (twice daily)", "Yashtimadhu powder for sore throat"],
+      "home_remedy": "Steam inhalation, honey lemon tea, chicken soup, adequate rest, vitamin C foods"
+    },
+    "GM_DIS_02": {
+      "allopathy": ["Rest and hydration", "Pain relievers (1 tablet every 6-8 hours)", "Antiviral medication (if prescribed early)", "Fever reducers as needed"],
+      "homeopathy": ["Gelsemium 30C (2 pills every 2 hours)", "Eupatorium Perf 30C (2 pills for body aches)", "Bryonia 30C (2 pills for headache)"],
+      "ayurveda": ["Tulsi and ginger decoction (3 times daily)", "Sitopaladi Churna (1/2 teaspoon with honey)", "Giloy juice (1 teaspoon twice daily)"],
+      "home_remedy": "Bed rest, plenty of fluids, warm soups, steam inhalation, avoid spreading to others"
+    },
+    "GM_DIS_03": {
+      "allopathy": ["Fever reducers (1 tablet every 6 hours)", "Adequate fluid intake", "Rest and cool compresses", "Light nutritious diet"],
+      "homeopathy": ["Belladonna 30C (2 pills for high fever)", "Ferrum Phos 6X (2 pills for mild fever)", "Aconitum 30C (2 pills at onset)"],
+      "ayurveda": ["Giloy juice (1 teaspoon twice daily)", "Coriander seed water", "Basil leaf tea"],
+      "home_remedy": "Cool sponge bath, stay hydrated, light foods, adequate rest, monitor temperature"
+    },
+    "GM_DIS_04": {
+      "allopathy": ["Decongestants (as directed)", "Saline nasal spray (3-4 times daily)", "Pain relievers for headache", "Steam inhalation"],
+      "homeopathy": ["Kali Bich 30C (2 pills for thick discharge)", "Pulsatilla 30C (2 pills for yellow mucus)", "Hepar Sulph 30C (2 pills for sensitivity)"],
+      "ayurveda": ["Anu Tailam nasal drops (2 drops each nostril)", "Steam with eucalyptus oil", "Ginger tea with honey"],
+      "home_remedy": "Steam inhalation, warm compresses on face, stay hydrated, elevate head while sleeping"
+    },
+    "GM_DIS_05": {
+      "allopathy": ["Cough suppressants (as needed)", "Expectorants for chest congestion", "Pain relievers for body aches", "Plenty of warm fluids"],
+      "homeopathy": ["Antimonium Tart 30C (2 pills for rattling cough)", "Ipecac 30C (2 pills for nausea with cough)", "Bryonia 30C (2 pills for dry cough)"],
+      "ayurveda": ["Vasavaleha (1 teaspoon twice daily)", "Sitopaladi Churna (1/2 teaspoon with honey)", "Tulsi and ginger tea"],
+      "home_remedy": "Warm salt water gargle, honey and ginger, steam inhalation, avoid cold drinks"
+    },
+    "GM_DIS_06": {
+      "allopathy": ["Antibiotics (as prescribed by doctor)", "Pain relievers for throat pain", "Throat lozenges", "Warm salt water gargles"],
+      "homeopathy": ["Belladonna 30C (2 pills for red throat)", "Mercurius Sol 30C (2 pills for swollen glands)", "Phytolacca 30C (2 pills for pain radiating to ears)"],
+      "ayurveda": ["Yashtimadhu powder gargle", "Turmeric milk", "Basil leaf tea with honey"],
+      "home_remedy": "Salt water gargle every 2 hours, warm teas, throat lozenges, complete antibiotic course"
+    },
+    "GM_DIS_07": {
+      "allopathy": ["Antibiotics (as prescribed by doctor)", "Pain relievers for discomfort", "Drink plenty of water", "Urinary alkalizers if recommended"],
+      "homeopathy": ["Cantharis 30C (2 pills every 2 hours)", "Sarsaparilla 30C (2 pills for burning at end)", "Berberis Vulgaris 30C (2 pills for radiating pain)"],
+      "ayurveda": ["Gokshuradi Guggulu (2 tablets twice daily)", "Coconut water", "Coriander seed water"],
+      "home_remedy": "Drink 8-10 glasses water daily, cranberry juice, avoid caffeine, complete antibiotic course"
+    },
+    "GM_DIS_08": {
+      "allopathy": ["Pain relievers (1 tablet every 6 hours)", "Warm compress on ear", "Antibiotics if bacterial (as prescribed)"],
+      "homeopathy": ["Pulsatilla 30C (2 pills for earache with discharge)", "Belladonna 30C (2 pills for sudden ear pain)", "Chamomilla 30C (2 pills for children's earache)"],
+      "ayurveda": ["Garlic oil drops (2 drops in ear)", "Warm onion compress", "Basil leaf juice drops"],
+      "home_remedy": "Warm compress, garlic oil drops, keep ear dry, pain relief medication"
+    },
+    "GM_DIS_09": {
+      "allopathy": ["Antibiotics (as prescribed by doctor)", "Fever reducers", "Cough medicine", "Plenty of rest and fluids"],
+      "homeopathy": ["Bryonia 30C (2 pills for chest pain with cough)", "Phosphorus 30C (2 pills for tight chest)", "Antimonium Tart 30C (2 pills for mucus in chest)"],
+      "ayurveda": ["Sitopaladi Churna (1/2 teaspoon with honey)", "Vasavaleha (1 teaspoon twice daily)", "Tulsi and ginger tea"],
+      "home_remedy": "Complete rest, steam inhalation, warm fluids, follow doctor's instructions carefully"
+    },
+    "GM_DIS_10": {
+      "allopathy": ["Pain relievers at onset (1-2 tablets)", "Rest in dark quiet room", "Anti-nausea medication if needed", "Avoid triggers"],
+      "homeopathy": ["Belladonna 30C (2 pills for throbbing headache)", "Iris Versicolor 30C (2 pills for visual disturbances)", "Natrum Mur 30C (2 pills for stress-related)"],
+      "ayurveda": ["Brahmi powder (1/2 teaspoon with water)", "Shankhapushpi syrup (1 teaspoon)", "Forehead massage with Brahmi oil"],
+      "home_remedy": "Dark quiet room, cold compress on forehead, caffeine in moderation, identify and avoid triggers"
+    },
+    "GM_DIS_11": {
+      "allopathy": ["Oral rehydration solution", "Rest and clear liquids initially", "BRAT diet when able to eat", "Anti-diarrheal if severe"],
+      "homeopathy": ["Arsenicum Album 30C (2 pills after each episode)", "Veratrum Album 30C (2 pills for vomiting)", "Podophyllum 30C (2 pills for diarrhea)"],
+      "ayurveda": ["Ginger tea", "Mint and cumin water", "Banana and rice diet"],
+      "home_remedy": "Clear fluids, BRAT diet (Banana, Rice, Applesauce, Toast), rest, avoid dairy and fatty foods"
+    },
+    "GM_DIS_12": {
+      "allopathy": ["Antihistamines (1 tablet daily)", "Nasal sprays (as directed)", "Allergy eye drops if needed", "Avoid allergens"],
+      "homeopathy": ["Allium Cepa 30C (2 pills for watery eyes)", "Sabadilla 30C (2 pills for sneezing)", "Wyethia 30C (2 pills for itchy palate)"],
+      "ayurveda": ["Anu Tailam nasal drops", "Turmeric milk", "Honey with local pollen"],
+      "home_remedy": "Saline nasal rinse, steam inhalation, local honey, avoid known allergens, keep windows closed"
+    },
+    "GM_DIS_13": {
+      "allopathy": ["Warm compresses (3-4 times daily)", "Antibiotic eye drops (if bacterial)", "Artificial tears", "Good hand hygiene"],
+      "homeopathy": ["Euphrasia 30C (2 pills for eye discharge)", "Pulsatilla 30C (2 pills for thick discharge)", "Argentum Nitricum 30C (2 pills for swollen lids)"],
+      "ayurveda": ["Triphala eye wash", "Rose water eye drops", "Cold milk compresses"],
+      "home_remedy": "Warm compresses, avoid touching eyes, separate towels, good hand washing, discard old makeup"
+    },
+    "GM_DIS_14": {
+      "allopathy": ["Oral rehydration solution", "Rest and clear liquids", "BRAT diet when improving", "Anti-nausea medication if severe"],
+      "homeopathy": ["Arsenicum Album 30C (2 pills every 2 hours)", "Veratrum Album 30C (2 pills for vomiting)", "China 30C (2 pills for weakness)"],
+      "ayurveda": ["Ginger and mint tea", "Pomegranate juice", "Nutmeg powder with water"],
+      "home_remedy": "Clear fluids, electrolyte drinks, bland foods, rest, good hygiene to prevent spread"
+    },
+    "GM_DIS_15": {
+      "allopathy": ["Rest and adequate sleep", "Pain relievers for sore throat", "Gargle with salt water", "Avoid contact sports"],
+      "homeopathy": ["Mercurius Sol 30C (2 pills for swollen glands)", "Baryta Carb 30C (2 pills for tonsillitis)", "Kali Mur 6X (2 pills for white patches)"],
+      "ayurveda": ["Yashtimadhu gargle", "Giloy juice (1 teaspoon twice daily)", "Turmeric milk"],
+      "home_remedy": "Complete rest, warm salt water gargles, nutritious diet, avoid strenuous activity"
+    }
+  }
+}

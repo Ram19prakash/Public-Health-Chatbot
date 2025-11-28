@@ -1,0 +1,227 @@
+{
+  "symptoms": {
+    "skin_rash": {
+      "red_patches": "DER_001",
+      "itchy_bumps": "DER_002",
+      "blisters": "DER_003",
+      "dry_scaly_patches": "DER_004",
+      "oily_patches": "DER_005"
+    },
+    "skin_color_changes": {
+      "redness": "DER_006",
+      "dark_patches": "DER_007",
+      "white_patches": "DER_008",
+      "yellowish_skin": "DER_009"
+    },
+    "pain_sensation": {
+      "burning_sensation": "DER_010",
+      "stinging_pain": "DER_011",
+      "tenderness": "DER_012",
+      "no_pain": "DER_013"
+    },
+    "location": {
+      "face": "DER_014",
+      "scalp": "DER_015",
+      "arms": "DER_016",
+      "legs": "DER_017",
+      "chest_back": "DER_018",
+      "all_over_body": "DER_019"
+    },
+    "severity": {
+      "mild_itch": "DER_020",
+      "moderate_itch": "DER_021",
+      "severe_itch": "DER_022",
+      "interferes_sleep": "DER_023"
+    },
+    "duration": {
+      "recent_1week": "DER_024",
+      "chronic_1month": "DER_025",
+      "recurring": "DER_026"
+    },
+    "triggers": {
+      "food_allergy": "DER_027",
+      "weather_changes": "DER_028",
+      "cosmetics": "DER_029",
+      "stress": "DER_030",
+      "medications": "DER_031"
+    },
+    "other_symptoms": {
+      "swelling": "DER_032",
+      "pus_formation": "DER_033",
+      "hair_loss": "DER_034",
+      "nail_changes": "DER_035",
+      "fever": "DER_036"
+    }
+  },
+
+  "diseases": [
+    {
+      "id": "DER_DIS_01",
+      "name": "Acne Vulgaris",
+      "symptoms": ["DER_005", "DER_003", "DER_006", "DER_014", "DER_018", "DER_011", "DER_033"]
+    },
+    {
+      "id": "DER_DIS_02",
+      "name": "Eczema (Atopic Dermatitis)",
+      "symptoms": ["DER_004", "DER_001", "DER_002", "DER_020", "DER_021", "DER_014", "DER_016", "DER_017", "DER_030"]
+    },
+    {
+      "id": "DER_DIS_03",
+      "name": "Psoriasis",
+      "symptoms": ["DER_004", "DER_001", "DER_007", "DER_012", "DER_015", "DER_016", "DER_017", "DER_035"]
+    },
+    {
+      "id": "DER_DIS_04",
+      "name": "Contact Dermatitis",
+      "symptoms": ["DER_001", "DER_002", "DER_010", "DER_006", "DER_027", "DER_029", "DER_024"]
+    },
+    {
+      "id": "DER_DIS_05",
+      "name": "Fungal Infection (Ringworm)",
+      "symptoms": ["DER_001", "DER_004", "DER_002", "DER_021", "DER_017", "DER_018", "DER_026"]
+    },
+    {
+      "id": "DER_DIS_06",
+      "name": "Urticaria (Hives)",
+      "symptoms": ["DER_001", "DER_002", "DER_021", "DER_019", "DER_027", "DER_024", "DER_032"]
+    },
+    {
+      "id": "DER_DIS_07",
+      "name": "Seborrheic Dermatitis",
+      "symptoms": ["DER_005", "DER_004", "DER_015", "DER_014", "DER_006", "DER_020"]
+    },
+    {
+      "id": "DER_DIS_08",
+      "name": "Rosacea",
+      "symptoms": ["DER_006", "DER_010", "DER_014", "DER_003", "DER_028", "DER_030"]
+    },
+    {
+      "id": "DER_DIS_09",
+      "name": "Vitiligo",
+      "symptoms": ["DER_008", "DER_013", "DER_014", "DER_016", "DER_017", "DER_019"]
+    },
+    {
+      "id": "DER_DIS_10",
+      "name": "Warts",
+      "symptoms": ["DER_002", "DER_013", "DER_016", "DER_017", "DER_026"]
+    },
+    {
+      "id": "DER_DIS_11",
+      "name": "Cold Sores (Herpes)",
+      "symptoms": ["DER_003", "DER_011", "DER_014", "DER_024", "DER_036"]
+    },
+    {
+      "id": "DER_DIS_12",
+      "name": "Boils (Abscess)",
+      "symptoms": ["DER_003", "DER_011", "DER_012", "DER_033", "DER_032", "DER_036"]
+    },
+    {
+      "id": "DER_DIS_13",
+      "name": "Scabies",
+      "symptoms": ["DER_002", "DER_022", "DER_023", "DER_016", "DER_017", "DER_026"]
+    },
+    {
+      "id": "DER_DIS_14",
+      "name": "Shingles (Herpes Zoster)",
+      "symptoms": ["DER_003", "DER_010", "DER_011", "DER_017", "DER_018", "DER_036"]
+    },
+    {
+      "id": "DER_DIS_15",
+      "name": "Athlete's Foot",
+      "symptoms": ["DER_001", "DER_002", "DER_004", "DER_010", "DER_017", "DER_021"]
+    }
+  ],
+
+  "treatments": {
+    "DER_DIS_01": {
+      "allopathy": ["Benzoyl Peroxide cream (apply twice daily)", "Salicylic Acid face wash (use daily)", "Antibiotic cream like Clindamycin (apply twice daily)", "Oral antibiotics if severe (as prescribed)"],
+      "homeopathy": ["Hepar Sulph 30C (2 pills twice daily)", "Kali Brom 30C (2 pills twice daily)", "Silicea 30C (2 pills twice daily)"],
+      "ayurveda": ["Kumkumadi Tailam (apply daily)", "Neem and Turmeric paste (apply twice weekly)", "Aloe Vera gel (apply daily)"],
+      "home_remedy": "Tea tree oil spot treatment, honey and cinnamon mask twice weekly, avoid oily foods"
+    },
+    "DER_DIS_02": {
+      "allopathy": ["Hydrocortisone cream 1% (apply twice daily)", "Moisturizing cream (apply 3-4 times daily)", "Antihistamine tablets for itching (as needed)"],
+      "homeopathy": ["Graphites 30C (2 pills twice daily)", "Sulphur 30C (2 pills twice daily)", "Arsenicum Album 30C (2 pills twice daily)"],
+      "ayurveda": ["Chandanaadi Lepam (apply daily)", "Coconut oil with camphor (apply twice daily)", "Neem powder paste (apply twice weekly)"],
+      "home_remedy": "Coconut oil moisturizer, oatmeal baths twice weekly, avoid harsh soaps"
+    },
+    "DER_DIS_03": {
+      "allopathy": ["Coal Tar ointment (apply daily)", "Salicylic Acid cream (apply twice daily)", "Vitamin D cream (apply daily)", "Moisturizing lotion (apply frequently)"],
+      "homeopathy": ["Arsenicum Iod 30C (2 pills twice daily)", "Thyroidinum 30C (2 pills twice daily)", "Kali Ars 30C (2 pills twice daily)"],
+      "ayurveda": ["Mahamarichyadi Tailam (apply daily)", "Jatyadi Tailam (apply twice daily)", "Panch Tikta Ghrita (1 teaspoon twice daily)"],
+      "home_remedy": "Sunlight exposure 15 minutes daily, dead sea salt baths, aloe vera gel application"
+    },
+    "DER_DIS_04": {
+      "allopathy": ["Hydrocortisone cream 1% (apply twice daily for 1 week)", "Calamine lotion (apply as needed for itching)", "Antihistamine tablets (1 tablet daily for itching)"],
+      "homeopathy": ["Rhus Tox 30C (2 pills every 2 hours)", "Anacardium 30C (2 pills twice daily)", "Croton Tig 30C (2 pills twice daily)"],
+      "ayurveda": ["Chandanaadi Lepam (apply twice daily)", "Rose water spray (use frequently)", "Sandalwood powder paste (apply daily)"],
+      "home_remedy": "Cold compress 3-4 times daily, baking soda paste, identify and avoid triggers"
+    },
+    "DER_DIS_05": {
+      "allopathy": ["Clotrimazole cream (apply twice daily for 2 weeks)", "Antifungal powder (apply daily)", "Keep area dry and clean"],
+      "homeopathy": ["Sepia 30C (2 pills twice daily)", "Tellurium 30C (2 pills twice daily)", "Bacillinum 30C (2 pills weekly)"],
+      "ayurveda": ["Nimbadi Lepam (apply twice daily)", "Turmeric and neem paste (apply daily)", "Jatyadi Tailam (apply twice daily)"],
+      "home_remedy": "Tea tree oil application twice daily, garlic paste, keep skin dry"
+    },
+    "DER_DIS_06": {
+      "allopathy": ["Antihistamine tablets (1 tablet daily)", "Calamine lotion (apply as needed)", "Avoid known triggers"],
+      "homeopathy": ["Apis Mellifica 30C (2 pills every hour during outbreak)", "Urtica Urens 30C (2 pills twice daily)", "Astacus 30C (2 pills twice daily)"],
+      "ayurveda": ["Haridra Khanda (1 teaspoon twice daily)", "Aloe Vera gel (apply frequently)", "Coconut water consumption"],
+      "home_remedy": "Cold shower during outbreak, baking soda bath, identify food triggers"
+    },
+    "DER_DIS_07": {
+      "allopathy": ["Ketoconazole shampoo (use twice weekly)", "Hydrocortisone cream (apply twice daily)", "Anti-dandruff shampoo (use regularly)"],
+      "homeopathy": ["Thuja 30C (2 pills twice daily)", "Natrum Mur 30C (2 pills twice daily)", "Graphites 30C (2 pills twice daily)"],
+      "ayurveda": ["Bhrungraj Oil (apply on scalp daily)", "Amla and Reetha shampoo (use regularly)", "Neem oil (apply twice weekly)"],
+      "home_remedy": "Apple cider vinegar rinse twice weekly, coconut oil massage, tea tree oil shampoo"
+    },
+    "DER_DIS_08": {
+      "allopathy": ["Metronidazole gel (apply twice daily)", "Azelaic Acid cream (apply daily)", "Sun protection SPF 30+ (apply daily)"],
+      "homeopathy": ["Psorinum 30C (2 pills twice daily)", "Carbo Veg 30C (2 pills twice daily)", "Sanguinaria 30C (2 pills twice daily)"],
+      "ayurveda": ["Chandanaadi Lepam (apply daily)", "Rose water spray (use frequently)", "Kumkumadi Tailam (apply nightly)"],
+      "home_remedy": "Green tea compress, aloe vera gel, avoid spicy food and alcohol"
+    },
+    "DER_DIS_09": {
+      "allopathy": ["Topical steroid creams (as prescribed)", "Phototherapy treatment (under medical supervision)", "Cosmetic cover-ups"],
+      "homeopathy": ["Arsenicum Sulph Flav 30C (2 pills twice daily)", "Syphilinum 30C (2 pills weekly)", "Hydrocotyle 30C (2 pills twice daily)"],
+      "ayurveda": ["Bakuchi Tailam (apply daily with sun exposure)", "Khadiradi Vati (2 tablets twice daily)", "Avalgujadi Lepam (apply daily)"],
+      "home_remedy": "Psoralen seeds with sunlight, copper water consumption, healthy diet"
+    },
+    "DER_DIS_10": {
+      "allopathy": ["Salicylic Acid patches (apply daily)", "Cryotherapy (by doctor)", "Duct tape occlusion method"],
+      "homeopathy": ["Thuja 30C (2 pills twice daily)", "Nitric Acid 30C (2 pills twice daily)", "Causticum 30C (2 pills twice daily)"],
+      "ayurveda": ["Karanja Tailam (apply twice daily)", "Fig tree milk application", "Castor oil with baking soda paste"],
+      "home_remedy": "Garlic paste application, banana peel covering, apple cider vinegar soak"
+    },
+    "DER_DIS_11": {
+      "allopathy": ["Antiviral cream like Acyclovir (apply 5 times daily)", "Pain relief cream (apply as needed)", "Keep area clean and dry"],
+      "homeopathy": ["Natrum Mur 30C (2 pills every 2 hours)", "Rhus Tox 30C (2 pills every 2 hours)", "Apis Mellifica 30C (2 pills every 2 hours)"],
+      "ayurveda": ["Neem leaf paste (apply twice daily)", "Aloe Vera gel (apply frequently)", "Turmeric and honey paste"],
+      "home_remedy": "Ice pack application, tea tree oil, lysine supplements during outbreak"
+    },
+    "DER_DIS_12": {
+      "allopathy": ["Warm compress (apply 3-4 times daily)", "Antibiotic cream (apply twice daily)", "Oral antibiotics if severe (as prescribed)"],
+      "homeopathy": ["Hepar Sulph 30C (2 pills every 3 hours)", "Silicea 30C (2 pills twice daily)", "Pyrogenium 30C (2 pills twice daily)"],
+      "ayurveda": ["Jatyadi Tailam (apply twice daily)", "Turmeric and neem paste (apply daily)", "Panchavalkala Kashayam (wash area)"],
+      "home_remedy": "Warm turmeric milk compress, tea tree oil application, maintain hygiene"
+    },
+    "DER_DIS_13": {
+      "allopathy": ["Permethrin cream 5% (apply from neck down, wash after 8-14 hours)", "Antihistamine for itching (as needed)", "Wash all clothes and bedding in hot water"],
+      "homeopathy": ["Sulphur 30C (2 pills twice daily)", "Psorinum 30C (2 pills twice daily)", "Arsenicum Album 30C (2 pills twice daily)"],
+      "ayurveda": ["Nimbadi Tailam (apply daily)", "Turmeric and neem paste (apply twice daily)", "Detoxification therapy"],
+      "home_remedy": "Neem leaves bath, tea tree oil application, thorough cleaning of environment"
+    },
+    "DER_DIS_14": {
+      "allopathy": ["Antiviral tablets (as prescribed by doctor)", "Pain relief medication (as needed)", "Calamine lotion for itching (apply as needed)"],
+      "homeopathy": ["Rhus Tox 30C (2 pills every 2 hours)", "Arsenicum Album 30C (2 pills twice daily)", "Mezereum 30C (2 pills twice daily)"],
+      "ayurveda": ["Mahamarichyadi Tailam (apply twice daily)", "Chandanaadi Lepam (apply frequently)", "Guduchi powder (1 teaspoon twice daily)"],
+      "home_remedy": "Cool oatmeal baths, honey application, stress reduction techniques"
+    },
+    "DER_DIS_15": {
+      "allopathy": ["Antifungal cream like Clotrimazole (apply twice daily for 4 weeks)", "Antifungal powder (apply daily)", "Keep feet dry and wear breathable shoes"],
+      "homeopathy": ["Silicea 30C (2 pills twice daily)", "Graphites 30C (2 pills twice daily)", "Tellurium 30C (2 pills twice daily)"],
+      "ayurveda": ["Nimbadi Tailam (apply twice daily)", "Turmeric and neem paste (apply daily)", "Jatyadi Tailam (apply nightly)"],
+      "home_remedy": "Vinegar foot soak twice daily, tea tree oil application, keep feet dry"
+    }
+  }
+}

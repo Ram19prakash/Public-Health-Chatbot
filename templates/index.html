@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Assistant Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>🏥 Medical Assistant Chatbot</h1>
+                <div class="language-selector">
+                    <select id="languageSelect">
+                        {% for code, name in languages.items() %}
+                        <option value="{{ code }}">{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <p>Select a department and describe your symptoms for personalized treatment recommendations</p>
+        </header>
+
+        <!-- Main Content Area - Split Layout -->
+        <div class="main-content">
+            <!-- Left Side - Chat History -->
+            <div class="chat-history-side">
+                <div class="chat-header">
+                    <span id="currentDepartment">General Consultation</span>
+                    <div class="chat-controls">
+                        <span id="currentLanguage">English</span>
+                        <span id="progressText">Ready</span>
+                        <button id="restartChat" class="control-btn">🔄 Restart</button>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        👋 Hello! I'm your medical assistant. Please select a department from the right panel to get started.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Selection & Questions -->
+            <div class="selection-side">
+                <!-- Department Selection -->
+                <div class="selection-section" id="departmentSection">
+                    <h3>Step 1: Select Medical Department</h3>
+                    <div class="option-grid">
+                        {% for key, value in departments.items() %}
+                        <button class="option-btn department-btn" data-department="{{ key }}">
+                            {{ value }}
+                        </button>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Question Section -->
+                <div class="question-section" id="questionSection" style="display: none;">
+                    <div class="question-display" id="questionDisplay">
+                        <!-- Questions and options will appear here -->
+                    </div>
+                    <div class="navigation-buttons">
+                        <button id="prevButton" class="nav-btn" style="display: none;">← Previous</button>
+                        <button id="nextButton" class="nav-btn" disabled>Next →</button>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                <div class="results-section" id="resultsSection" style="display: none;">
+                    <h3>Consultation Complete</h3>
+                    <p>Your treatment recommendations are shown in the chat.</p>
+                    <button id="newConsultation" class="action-btn">Start New Consultation</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p>⚠️ <strong>Disclaimer:</strong> This chatbot provides general information only and is not a substitute for professional medical advice. Always consult healthcare professionals for diagnosis and treatment.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

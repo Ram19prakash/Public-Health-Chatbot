@@ -1,0 +1,233 @@
+{
+  "symptoms": {
+    "pain_location": {
+      "neck_pain": "MSK_001",
+      "shoulder_pain": "MSK_002",
+      "back_pain_upper": "MSK_003",
+      "back_pain_lower": "MSK_004",
+      "hip_pain": "MSK_005",
+      "knee_pain": "MSK_006",
+      "elbow_pain": "MSK_007",
+      "wrist_pain": "MSK_008",
+      "ankle_pain": "MSK_009",
+      "multiple_joints": "MSK_010"
+    },
+    "pain_type": {
+      "sharp_shooting": "MSK_011",
+      "dull_ache": "MSK_012",
+      "burning": "MSK_013",
+      "throbbing": "MSK_014",
+      "stabbing": "MSK_015"
+    },
+    "pain_timing": {
+      "morning_stiffness": "MSK_016",
+      "worse_activity": "MSK_017",
+      "worse_rest": "MSK_018",
+      "night_pain": "MSK_019",
+      "constant_pain": "MSK_020"
+    },
+    "mobility": {
+      "difficulty_moving": "MSK_021",
+      "stiffness": "MSK_022",
+      "limited_range": "MSK_023",
+      "weakness": "MSK_024",
+      "giving_way": "MSK_025"
+    },
+    "swelling_inflammation": {
+      "swelling": "MSK_026",
+      "redness": "MSK_027",
+      "warmth": "MSK_028",
+      "tenderness": "MSK_029"
+    },
+    "injury_related": {
+      "recent_injury": "MSK_030",
+      "overuse": "MSK_031",
+      "sports_injury": "MSK_032",
+      "fall_accident": "MSK_033"
+    },
+    "duration": {
+      "acute_1week": "MSK_034",
+      "subacute_1month": "MSK_035",
+      "chronic_3months": "MSK_036",
+      "recurring": "MSK_037"
+    },
+    "other_symptoms": {
+      "numbness": "MSK_038",
+      "tingling": "MSK_039",
+      "muscle_spasms": "MSK_040",
+      "fatigue": "MSK_041",
+      "fever": "MSK_042"
+    }
+  },
+
+  "diseases": [
+    {
+      "id": "MSK_DIS_01",
+      "name": "Osteoarthritis",
+      "symptoms": ["MSK_006", "MSK_005", "MSK_004", "MSK_012", "MSK_016", "MSK_017", "MSK_022", "MSK_023"]
+    },
+    {
+      "id": "MSK_DIS_02",
+      "name": "Rheumatoid Arthritis",
+      "symptoms": ["MSK_010", "MSK_016", "MSK_026", "MSK_027", "MSK_028", "MSK_012", "MSK_041", "MSK_042"]
+    },
+    {
+      "id": "MSK_DIS_03",
+      "name": "Lower Back Pain (Lumbago)",
+      "symptoms": ["MSK_004", "MSK_011", "MSK_015", "MSK_017", "MSK_021", "MSK_038", "MSK_039"]
+    },
+    {
+      "id": "MSK_DIS_04",
+      "name": "Cervical Spondylosis",
+      "symptoms": ["MSK_001", "MSK_011", "MSK_016", "MSK_022", "MSK_038", "MSK_039", "MSK_024"]
+    },
+    {
+      "id": "MSK_DIS_05",
+      "name": "Frozen Shoulder",
+      "symptoms": ["MSK_002", "MSK_012", "MSK_016", "MSK_022", "MSK_023", "MSK_021", "MSK_019"]
+    },
+    {
+      "id": "MSK_DIS_06",
+      "name": "Tennis Elbow",
+      "symptoms": ["MSK_007", "MSK_013", "MSK_017", "MSK_029", "MSK_024", "MSK_031"]
+    },
+    {
+      "id": "MSK_DIS_07",
+      "name": "Carpal Tunnel Syndrome",
+      "symptoms": ["MSK_008", "MSK_013", "MSK_038", "MSK_039", "MSK_019", "MSK_024", "MSK_031"]
+    },
+    {
+      "id": "MSK_DIS_08",
+      "name": "Sciatica",
+      "symptoms": ["MSK_004", "MSK_011", "MSK_015", "MSK_017", "MSK_038", "MSK_039", "MSK_005", "MSK_006"]
+    },
+    {
+      "id": "MSK_DIS_09",
+      "name": "Gout",
+      "symptoms": ["MSK_009", "MSK_006", "MSK_014", "MSK_026", "MSK_027", "MSK_028", "MSK_029", "MSK_019"]
+    },
+    {
+      "id": "MSK_DIS_10",
+      "name": "Muscle Strain",
+      "symptoms": ["MSK_012", "MSK_029", "MSK_026", "MSK_017", "MSK_021", "MSK_030", "MSK_032"]
+    },
+    {
+      "id": "MSK_DIS_11",
+      "name": "Tendinitis",
+      "symptoms": ["MSK_013", "MSK_029", "MSK_017", "MSK_026", "MSK_031", "MSK_021"]
+    },
+    {
+      "id": "MSK_DIS_12",
+      "name": "Fibromyalgia",
+      "symptoms": ["MSK_010", "MSK_012", "MSK_020", "MSK_041", "MSK_022", "MSK_040"]
+    },
+    {
+      "id": "MSK_DIS_13",
+      "name": "Osteoporosis",
+      "symptoms": ["MSK_012", "MSK_004", "MSK_024", "MSK_033", "MSK_036"]
+    },
+    {
+      "id": "MSK_DIS_14",
+      "name": "Ankylosing Spondylitis",
+      "symptoms": ["MSK_004", "MSK_016", "MSK_022", "MSK_017", "MSK_019", "MSK_036", "MSK_041"]
+    },
+    {
+      "id": "MSK_DIS_15",
+      "name": "Bursitis",
+      "symptoms": ["MSK_002", "MSK_005", "MSK_006", "MSK_012", "MSK_026", "MSK_028", "MSK_029", "MSK_017"]
+    }
+  ],
+
+  "treatments": {
+    "MSK_DIS_01": {
+      "allopathy": ["Pain relievers like Paracetamol (1 tablet every 6 hours as needed)", "Topical pain gels (apply 3-4 times daily)", "Glucosamine supplements (1 tablet daily)"],
+      "homeopathy": ["Rhus Tox 30C (2 pills 3 times daily)", "Bryonia 30C (2 pills 3 times daily)", "Calcarea Fluor 6X (2 pills twice daily)"],
+      "ayurveda": ["Yograj Guggulu (2 tablets twice daily)", "Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (massage daily)"],
+      "home_remedy": "Hot water bag application, gentle exercises, weight management, turmeric milk"
+    },
+    "MSK_DIS_02": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Disease-modifying drugs (as prescribed by doctor)", "Low-dose steroids (as prescribed)"],
+      "homeopathy": ["Rhus Tox 30C (2 pills 3 times daily)", "Apis Mellifica 30C (2 pills 3 times daily)", "Actaea Spicata 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Kaishore Guggulu (2 tablets twice daily)", "Punarnavadi Guggulu (2 tablets twice daily)", "Dashmoolarishta (15ml twice daily)"],
+      "home_remedy": "Warm Epsom salt baths, turmeric in diet, gentle yoga, fish oil supplements"
+    },
+    "MSK_DIS_03": {
+      "allopathy": ["Pain relievers (1 tablet every 8 hours)", "Muscle relaxants (as prescribed)", "Hot/cold packs (alternate every 20 minutes)"],
+      "homeopathy": ["Rhus Tox 30C (2 pills every 2 hours during pain)", "Bryonia 30C (2 pills 3 times daily)", "Hypericum 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (massage twice daily)", "Yograj Guggulu (2 tablets twice daily)"],
+      "home_remedy": "Hot water bottle on back, gentle stretching, proper sitting posture, adequate rest"
+    },
+    "MSK_DIS_04": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Neck collar for support (wear as needed)", "Muscle relaxants (as prescribed)"],
+      "homeopathy": ["Cimicifuga 30C (2 pills 3 times daily)", "Kalmia 30C (2 pills 3 times daily)", "Rhus Tox 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (neck massage daily)", "Ashwagandha powder (1 teaspoon with milk at bedtime)"],
+      "home_remedy": "Neck exercises daily, proper pillow height, warm towel compress, avoid phone bending"
+    },
+    "MSK_DIS_05": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Physical therapy exercises (daily)", "Hot packs (apply 3-4 times daily)"],
+      "homeopathy": ["Ferrum Phos 6X (2 pills 3 times daily)", "Rhus Tox 30C (2 pills 3 times daily)", "Bryonia 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (shoulder massage daily)", "Nirgundi Tailam (local application)"],
+      "home_remedy": "Pendulum exercises daily, wall climbing stretches, warm oil massage, consistent movement"
+    },
+    "MSK_DIS_06": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Tennis elbow strap (wear during activities)", "Topical anti-inflammatory gel (apply 3 times daily)"],
+      "homeopathy": ["Ruta Graveolens 30C (2 pills 3 times daily)", "Rhus Tox 30C (2 pills 3 times daily)", "Arnica 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (massage twice daily)", "Nirgundi Tailam (local application)"],
+      "home_remedy": "Ice pack application, wrist strengthening exercises, rest from repetitive motions, proper grip techniques"
+    },
+    "MSK_DIS_07": {
+      "allopathy": ["Wrist splint (wear at night)", "Pain relievers (1 tablet as needed)", "Nerve gliding exercises (daily)"],
+      "homeopathy": ["Hypericum 30C (2 pills 3 times daily)", "Ruta Graveolens 30C (2 pills 3 times daily)", "Plumbum Met 30C (2 pills twice daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (wrist massage daily)", "Ashwagandha powder (1 teaspoon with milk)"],
+      "home_remedy": "Wrist stretches every hour, proper keyboard position, ice pack for swelling, vitamin B6 supplements"
+    },
+    "MSK_DIS_08": {
+      "allopathy": ["Pain relievers (1 tablet every 8 hours)", "Muscle relaxants (as prescribed)", "Hot/cold therapy (alternate every 20 minutes)"],
+      "homeopathy": ["Colocynthis 30C (2 pills every 2 hours during pain)", "Gnaphallium 30C (2 pills 3 times daily)", "Rhus Tox 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Yograj Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (back massage daily)", "Punarnavadi Guggulu (2 tablets twice daily)"],
+      "home_remedy": "Piriformis stretch daily, walking regularly, proper sitting posture, warm compress on lower back"
+    },
+    "MSK_DIS_09": {
+      "allopathy": ["Pain relievers (1 tablet every 6 hours during attack)", "Colchicine (as prescribed by doctor)", "Drink plenty of water (8-10 glasses daily)"],
+      "homeopathy": ["Colchicum 30C (2 pills every hour during acute attack)", "Ledum Pal 30C (2 pills 3 times daily)", "Benzoic Acid 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Gokshuradi Guggulu (2 tablets twice daily)", "Guduchi powder (1 teaspoon twice daily)"],
+      "home_remedy": "Cherry juice daily, apple cider vinegar in water, cold compress on joint, avoid purine-rich foods"
+    },
+    "MSK_DIS_10": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Ice pack (apply for 15 minutes every 2 hours)", "Rest the affected muscle"],
+      "homeopathy": ["Arnica 30C (2 pills every 2 hours initially)", "Rhus Tox 30C (2 pills 3 times daily)", "Ruta Graveolens 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (gentle massage daily)", "Nirgundi Tailam (local application)"],
+      "home_remedy": "RICE method (Rest, Ice, Compression, Elevation), gentle stretching after 48 hours, warm compress later"
+    },
+    "MSK_DIS_11": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Rest from aggravating activities", "Ice pack (apply 3-4 times daily)"],
+      "homeopathy": ["Ruta Graveolens 30C (2 pills 3 times daily)", "Rhus Tox 30C (2 pills 3 times daily)", "Arnica 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (massage gently twice daily)", "Nirgundi Tailam (local application)"],
+      "home_remedy": "Ice massage, eccentric strengthening exercises, proper warm-up before activities, gradual return to activity"
+    },
+    "MSK_DIS_12": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Low-impact exercises (daily)", "Stress management techniques"],
+      "homeopathy": ["Rhus Tox 30C (2 pills 3 times daily)", "Arnica 30C (2 pills 3 times daily)", "Kalmia Latifolia 30C (2 pills twice daily)"],
+      "ayurveda": ["Ashwagandha powder (1 teaspoon with milk twice daily)", "Bala Tailam (whole body massage weekly)", "Yograj Guggulu (2 tablets twice daily)"],
+      "home_remedy": "Warm baths with Epsom salt, gentle yoga and stretching, good sleep routine, stress reduction activities"
+    },
+    "MSK_DIS_13": {
+      "allopathy": ["Calcium supplements (1 tablet daily)", "Vitamin D supplements (1 tablet daily)", "Weight-bearing exercises (daily)"],
+      "homeopathy": ["Calcarea Phos 6X (2 pills twice daily)", "Symphytum 30C (2 pills twice daily)", "Silicea 30C (2 pills twice daily)"],
+      "ayurveda": ["Laksha Guggulu (2 tablets twice daily)", "Praval Pishti (125mg with milk twice daily)", "Mukta Pishti (125mg with milk twice daily)"],
+      "home_remedy": "Calcium-rich foods daily, sunlight exposure 15 minutes daily, walking regularly, balance exercises to prevent falls"
+    },
+    "MSK_DIS_14": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Physical therapy exercises (daily)", "Posture training"],
+      "homeopathy": ["Rhus Tox 30C (2 pills 3 times daily)", "Bryonia 30C (2 pills 3 times daily)", "Kalmia Latifolia 30C (2 pills twice daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (back massage daily)", "Yograj Guggulu (2 tablets twice daily)"],
+      "home_remedy": "Daily stretching exercises, swimming or water aerobics, proper sleeping position, breathing exercises"
+    },
+    "MSK_DIS_15": {
+      "allopathy": ["Pain relievers (1 tablet as needed)", "Ice pack (apply for 15 minutes 3-4 times daily)", "Rest the affected joint"],
+      "homeopathy": ["Apis Mellifica 30C (2 pills 3 times daily)", "Bryonia 30C (2 pills 3 times daily)", "Rhus Tox 30C (2 pills 3 times daily)"],
+      "ayurveda": ["Punarnavadi Guggulu (2 tablets twice daily)", "Mahanarayan Tailam (gentle massage twice daily)", "Nirgundi Tailam (local application)"],
+      "home_remedy": "Ice compression, proper padding for joints, avoid pressure on affected area, gentle range of motion exercises"
+    }
+  }
+}

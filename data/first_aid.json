@@ -1,0 +1,223 @@
+{
+  "symptoms": {
+    "injury_type": {
+      "cuts_scrapes": "FA_001",
+      "burns": "FA_002",
+      "bruises": "FA_003",
+      "sprains_strains": "FA_004",
+      "fractures": "FA_005",
+      "nosebleeds": "FA_006",
+      "animal_bites": "FA_007",
+      "insect_stings": "FA_008"
+    },
+    "bleeding": {
+      "minor_bleeding": "FA_009",
+      "heavy_bleeding": "FA_010",
+      "no_bleeding": "FA_011"
+    },
+    "pain_level": {
+      "mild_pain": "FA_012",
+      "moderate_pain": "FA_013",
+      "severe_pain": "FA_014"
+    },
+    "swelling": {
+      "mild_swelling": "FA_015",
+      "moderate_swelling": "FA_016",
+      "severe_swelling": "FA_017"
+    },
+    "mobility": {
+      "full_movement": "FA_018",
+      "limited_movement": "FA_019",
+      "no_movement": "FA_020"
+    },
+    "burn_severity": {
+      "first_degree_burn": "FA_021",
+      "second_degree_burn": "FA_022",
+      "third_degree_burn": "FA_023"
+    },
+    "emergency_signs": {
+      "difficulty_breathing": "FA_024",
+      "unconsciousness": "FA_025",
+      "severe_allergy": "FA_026",
+      "chest_pain": "FA_027",
+      "head_injury": "FA_028"
+    },
+    "other_symptoms": {
+      "fever": "FA_029",
+      "dizziness": "FA_030",
+      "nausea_vomiting": "FA_031",
+      "confusion": "FA_032"
+    }
+  },
+
+  "diseases": [
+    {
+      "id": "FA_DIS_01",
+      "name": "Minor Cuts and Scrapes",
+      "symptoms": ["FA_001", "FA_009", "FA_012", "FA_015"]
+    },
+    {
+      "id": "FA_DIS_02",
+      "name": "Minor Burns",
+      "symptoms": ["FA_002", "FA_021", "FA_012", "FA_015"]
+    },
+    {
+      "id": "FA_DIS_03",
+      "name": "Sprains and Strains",
+      "symptoms": ["FA_004", "FA_013", "FA_016", "FA_019", "FA_003"]
+    },
+    {
+      "id": "FA_DIS_04",
+      "name": "Nosebleeds",
+      "symptoms": ["FA_006", "FA_009"]
+    },
+    {
+      "id": "FA_DIS_05",
+      "name": "Insect Bites and Stings",
+      "symptoms": ["FA_008", "FA_012", "FA_015", "FA_013"]
+    },
+    {
+      "id": "FA_DIS_06",
+      "name": "Bruises and Contusions",
+      "symptoms": ["FA_003", "FA_012", "FA_015"]
+    },
+    {
+      "id": "FA_DIS_07",
+      "name": "Minor Animal Bites",
+      "symptoms": ["FA_007", "FA_009", "FA_012"]
+    },
+    {
+      "id": "FA_DIS_08",
+      "name": "Severe Bleeding",
+      "symptoms": ["FA_010", "FA_014", "FA_030"]
+    },
+    {
+      "id": "FA_DIS_09",
+      "name": "Serious Burns",
+      "symptoms": ["FA_002", "FA_022", "FA_023", "FA_014", "FA_017"]
+    },
+    {
+      "id": "FA_DIS_10",
+      "name": "Fractures",
+      "symptoms": ["FA_005", "FA_014", "FA_017", "FA_020", "FA_030"]
+    },
+    {
+      "id": "FA_DIS_11",
+      "name": "Head Injury",
+      "symptoms": ["FA_028", "FA_032", "FA_030", "FA_031"]
+    },
+    {
+      "id": "FA_DIS_12",
+      "name": "Allergic Reaction",
+      "symptoms": ["FA_026", "FA_024", "FA_017", "FA_030"]
+    },
+    {
+      "id": "FA_DIS_13",
+      "name": "Choking Emergency",
+      "symptoms": ["FA_024", "FA_025"]
+    },
+    {
+      "id": "FA_DIS_14",
+      "name": "Heat Exhaustion",
+      "symptoms": ["FA_029", "FA_030", "FA_031", "FA_032"]
+    },
+    {
+      "id": "FA_DIS_15",
+      "name": "Hypothermia",
+      "symptoms": ["FA_032", "FA_030", "FA_029"]
+    }
+  ],
+
+  "treatments": {
+    "FA_DIS_01": {
+      "allopathy": ["Clean with soap and water", "Apply antibiotic ointment", "Cover with sterile bandage", "Change dressing daily"],
+      "homeopathy": ["Calendula cream (apply twice daily)", "Hypericum 30C (2 pills for pain)", "Ledum 30C (2 pills for puncture wounds)"],
+      "ayurveda": ["Turmeric paste (apply daily)", "Aloe Vera gel (apply twice daily)", "Honey application (for clean wounds)"],
+      "home_remedy": "Wash with clean water, apply honey or aloe vera, keep covered and dry"
+    },
+    "FA_DIS_02": {
+      "allopathy": ["Cool running water for 10-20 minutes", "Apply burn cream or aloe vera", "Cover with sterile non-stick dressing", "Pain relievers if needed"],
+      "homeopathy": ["Cantharis 30C (2 pills every 2 hours)", "Urtica Urens 30C (2 pills for burning sensation)", "Causticum 30C (2 pills for old burns)"],
+      "ayurveda": ["Aloe Vera gel (apply frequently)", "Honey application", "Sandooka paste (turmeric and ghee)"],
+      "home_remedy": "Cool water immersion, aloe vera gel, honey application, avoid breaking blisters"
+    },
+    "FA_DIS_03": {
+      "allopathy": ["Rest the injured area", "Ice pack for 15-20 minutes every 2-3 hours", "Compression bandage", "Elevate the injury"],
+      "homeopathy": ["Arnica 30C (2 pills every 2 hours)", "Rhus Tox 30C (2 pills for stiffness)", "Ruta 30C (2 pills for ligament pain)"],
+      "ayurveda": ["Mahanarayan Tailam (massage gently)", "Punarnavadi Guggulu (2 tablets twice daily)", "Ice pack application"],
+      "home_remedy": "RICE method (Rest, Ice, Compression, Elevation), gentle movement after 48 hours"
+    },
+    "FA_DIS_04": {
+      "allopathy": ["Sit upright and lean forward", "Pinch soft part of nose for 10 minutes", "Apply ice pack to bridge of nose", "Avoid blowing nose for few hours"],
+      "homeopathy": ["Hamamelis 30C (2 pills during bleeding)", "Phosphorus 30C (2 pills for recurrent nosebleeds)", "Ipecac 30C (2 pills for heavy bleeding)"],
+      "ayurveda": ["Cold compress on nose", "Sit in upright position", "Nasya with Anu Tailam (after bleeding stops)"],
+      "home_remedy": "Pinch nostrils together, lean forward, cold compress on nose, avoid tilting head back"
+    },
+    "FA_DIS_05": {
+      "allopathy": ["Remove stinger if present", "Wash with soap and water", "Apply cold compress", "Anti-itch cream if needed"],
+      "homeopathy": ["Apis Mellifica 30C (2 pills every 2 hours)", "Ledum 30C (2 pills for puncture wounds)", "Urtica Urens 30C (2 pills for itching)"],
+      "ayurveda": ["Turmeric paste application", "Aloe Vera gel", "Neem leaf paste"],
+      "home_remedy": "Baking soda paste, ice pack, honey application, avoid scratching"
+    },
+    "FA_DIS_06": {
+      "allopathy": ["Ice pack for first 24 hours", "Rest the injured area", "Elevate if possible", "Pain relievers if needed"],
+      "homeopathy": ["Arnica 30C (2 pills every 3 hours)", "Bellis Perennis 30C (2 pills for deep bruises)", "Hamamelis 30C (2 pills for soreness)"],
+      "ayurveda": ["Mahanarayan Tailam (gentle massage after 48 hours)", "Ice pack initially", "Turmeric with milk internally"],
+      "home_remedy": "Cold compress first 24 hours, warm compress after 48 hours, arnica cream"
+    },
+    "FA_DIS_07": {
+      "allopathy": ["Wash with soap and running water for 5 minutes", "Apply antibiotic ointment", "Cover with clean dressing", "Seek medical attention for rabies risk"],
+      "homeopathy": ["Ledum 30C (2 pills every 2 hours)", "Hypericum 30C (2 pills for nerve pain)", "Lyssin 30C (2 pills for animal bites)"],
+      "ayurveda": ["Turmeric and neem paste", "Wash thoroughly with soap", "Consult doctor for vaccination"],
+      "home_remedy": "Thorough cleaning with soap, hydrogen peroxide rinse, seek medical advice for vaccination"
+    },
+    "FA_DIS_08": {
+      "allopathy": ["Apply direct pressure with clean cloth", "Elevate the injured area", "Call emergency services immediately", "Do not remove soaked dressings"],
+      "homeopathy": ["Ipecac 30C (2 pills during bleeding)", "Phosphorus 30C (2 pills for arterial bleeding)", "China 30C (2 pills after bleeding stops)"],
+      "ayurveda": ["Direct pressure with clean cloth", "Turmeric powder for minor bleeding", "Seek immediate medical help"],
+      "home_remedy": "Call emergency services, apply direct pressure, elevate injury, keep patient calm"
+    },
+    "FA_DIS_09": {
+      "allopathy": ["Call emergency services immediately", "Do not apply ice or creams", "Cover with sterile non-stick dressing", "Keep victim warm and calm"],
+      "homeopathy": ["Cantharis 30C (2 pills every 15 minutes)", "Urtica Urens 30C (2 pills for burning)", "Causticum 30C (2 pills for contractures)"],
+      "ayurveda": ["Cool water (not ice) on burns", "Cover with clean cloth", "Immediate medical attention required"],
+      "home_remedy": "Call emergency services, cool with room temperature water, cover with clean cloth, do not break blisters"
+    },
+    "FA_DIS_10": {
+      "allopathy": ["Immobilize the injured area", "Apply ice pack", "Call emergency services", "Do not try to realign bone"],
+      "homeopathy": ["Arnica 30C (2 pills every 15 minutes)", "Symphytum 30C (2 pills for bone pain)", "Eupatorium Perf 30C (2 pills for pain)"],
+      "ayurveda": ["Immobilize with splint", "Ice pack application", "Immediate medical attention required"],
+      "home_remedy": "Call emergency services, immobilize injury, apply ice, keep patient still"
+    },
+    "FA_DIS_11": {
+      "allopathy": ["Call emergency services immediately", "Keep person still and calm", "Monitor breathing", "Do not give food or water"],
+      "homeopathy": ["Arnica 30C (2 pills every 15 minutes)", "Natrum Sulph 30C (2 pills for head injury)", "Cicuta 30C (2 pills for convulsions)"],
+      "ayurveda": ["Keep head elevated", "Cold compress on head", "Immediate medical attention required"],
+      "home_remedy": "Call emergency services, keep person still, monitor consciousness, do not move unnecessarily"
+    },
+    "FA_DIS_12": {
+      "allopathy": ["Use epinephrine auto-injector if available", "Call emergency services immediately", "Help person use inhaler if available", "Loosen tight clothing"],
+      "homeopathy": ["Apis Mellifica 30C (2 pills every 5 minutes)", "Urtica Urens 30C (2 pills for hives)", "Arsenicum Album 30C (2 pills for anxiety)"],
+      "ayurveda": ["Immediate medical attention required", "Keep person calm", "Identify and remove allergen if possible"],
+      "home_remedy": "Call emergency services immediately, use epinephrine if prescribed, help person sit up and breathe comfortably"
+    },
+    "FA_DIS_13": {
+      "allopathy": ["Perform Heimlich maneuver", "Call emergency services", "Back blows for infants", "CPR if person becomes unconscious"],
+      "homeopathy": ["Not applicable - immediate action required"],
+      "ayurveda": ["Not applicable - immediate action required"],
+      "home_remedy": "Call emergency services, perform Heimlich maneuver, back blows for children, CPR if trained"
+    },
+    "FA_DIS_14": {
+      "allopathy": ["Move to cool place", "Lie down and elevate legs", "Drink cool water", "Apply cool wet cloths"],
+      "homeopathy": ["Glonoine 30C (2 pills every 15 minutes)", "Belladonna 30C (2 pills for headache)", "Natrum Carb 30C (2 pills for weakness)"],
+      "ayurveda": ["Cool water to drink", "Rest in shade", "Sandooka application on forehead", "Coconut water"],
+      "home_remedy": "Move to cool area, drink water, cool compresses, rest with elevated feet"
+    },
+    "FA_DIS_15": {
+      "allopathy": ["Move to warm place", "Remove wet clothing", "Warm with blankets", "Give warm non-alcoholic drinks"],
+      "homeopathy": ["Carbo Veg 30C (2 pills every 15 minutes)", "Camphora 30C (2 pills for collapse)", "Secale 30C (2 pills for coldness)"],
+      "ayurveda": ["Warm blankets", "Warm oil massage", "Ginger tea", "Warm environment"],
+      "home_remedy": "Move to warm area, dry clothing, warm blankets, warm drinks, avoid direct heat"
+    }
+  }
+}

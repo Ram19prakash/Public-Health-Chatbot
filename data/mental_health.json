@@ -1,0 +1,230 @@
+{
+  "symptoms": {
+    "mood_symptoms": {
+      "sadness_hopelessness": "MH_001",
+      "anxiety_worry": "MH_002",
+      "irritability_anger": "MH_003",
+      "mood_swings": "MH_004",
+      "emotional_numbness": "MH_005"
+    },
+    "physical_symptoms": {
+      "sleep_problems": "MH_006",
+      "appetite_changes": "MH_007",
+      "fatigue_low_energy": "MH_008",
+      "body_aches": "MH_009",
+      "digestive_issues": "MH_010"
+    },
+    "cognitive_symptoms": {
+      "concentration_problems": "MH_011",
+      "memory_issues": "MH_012",
+      "indecisiveness": "MH_013",
+      "racing_thoughts": "MH_014",
+      "negative_thoughts": "MH_015"
+    },
+    "behavioral_symptoms": {
+      "social_withdrawal": "MH_016",
+      "loss_interest_activities": "MH_017",
+      "agitation_restlessness": "MH_018",
+      "procrastination": "MH_019",
+      "changes_routine": "MH_020"
+    },
+    "duration_frequency": {
+      "recent_2weeks": "MH_021",
+      "chronic_2months": "MH_022",
+      "daily_symptoms": "MH_023",
+      "episodic": "MH_024",
+      "constant": "MH_025"
+    },
+    "impact_daily_life": {
+      "work_school_problems": "MH_026",
+      "relationship_issues": "MH_027",
+      "self_care_difficulty": "MH_028",
+      "daily_tasks_challenging": "MH_029"
+    },
+    "stress_triggers": {
+      "work_stress": "MH_030",
+      "relationship_stress": "MH_031",
+      "financial_stress": "MH_032",
+      "health_concerns": "MH_033",
+      "life_changes": "MH_034"
+    },
+    "severe_symptoms": {
+      "panic_attacks": "MH_035",
+      "suicidal_thoughts": "MH_036",
+      "self_harm_thoughts": "MH_037",
+      "detachment_reality": "MH_038",
+      "extreme_fear": "MH_039"
+    }
+  },
+
+  "diseases": [
+    {
+      "id": "MH_DIS_01",
+      "name": "Major Depressive Disorder",
+      "symptoms": ["MH_001", "MH_006", "MH_008", "MH_011", "MH_017", "MH_007", "MH_015", "MH_016", "MH_029"]
+    },
+    {
+      "id": "MH_DIS_02",
+      "name": "Generalized Anxiety Disorder",
+      "symptoms": ["MH_002", "MH_014", "MH_018", "MH_006", "MH_008", "MH_009", "MH_011", "MH_023", "MH_030"]
+    },
+    {
+      "id": "MH_DIS_03",
+      "name": "Panic Disorder",
+      "symptoms": ["MH_035", "MH_002", "MH_014", "MH_018", "MH_009", "MH_039", "MH_024", "MH_026"]
+    },
+    {
+      "id": "MH_DIS_04",
+      "name": "Social Anxiety Disorder",
+      "symptoms": ["MH_002", "MH_016", "MH_039", "MH_018", "MH_009", "MH_010", "MH_027", "MH_026"]
+    },
+    {
+      "id": "MH_DIS_05",
+      "name": "Obsessive-Compulsive Disorder (OCD)",
+      "symptoms": ["MH_014", "MH_015", "MH_019", "MH_002", "MH_018", "MH_020", "MH_023", "MH_029"]
+    },
+    {
+      "id": "MH_DIS_06",
+      "name": "Post-Traumatic Stress Disorder (PTSD)",
+      "symptoms": ["MH_035", "MH_014", "MH_006", "MH_018", "MH_016", "MH_005", "MH_015", "MH_038", "MH_024"]
+    },
+    {
+      "id": "MH_DIS_07",
+      "name": "Bipolar Disorder",
+      "symptoms": ["MH_004", "MH_014", "MH_018", "MH_006", "MH_017", "MH_003", "MH_024", "MH_026", "MH_027"]
+    },
+    {
+      "id": "MH_DIS_08",
+      "name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+      "symptoms": ["MH_011", "MH_018", "MH_019", "MH_013", "MH_012", "MH_004", "MH_026", "MH_027"]
+    },
+    {
+      "id": "MH_DIS_09",
+      "name": "Insomnia Disorder",
+      "symptoms": ["MH_006", "MH_008", "MH_011", "MH_003", "MH_009", "MH_029", "MH_023", "MH_026"]
+    },
+    {
+      "id": "MH_DIS_10",
+      "name": "Adjustment Disorder",
+      "symptoms": ["MH_001", "MH_002", "MH_016", "MH_006", "MH_007", "MH_034", "MH_027", "MH_021"]
+    },
+    {
+      "id": "MH_DIS_11",
+      "name": "Burnout Syndrome",
+      "symptoms": ["MH_008", "MH_005", "MH_017", "MH_011", "MH_030", "MH_026", "MH_029", "MH_022"]
+    },
+    {
+      "id": "MH_DIS_12",
+      "name": "Phobias",
+      "symptoms": ["MH_039", "MH_002", "MH_035", "MH_018", "MH_016", "MH_010", "MH_024", "MH_026"]
+    },
+    {
+      "id": "MH_DIS_13",
+      "name": "Eating Disorders",
+      "symptoms": ["MH_007", "MH_009", "MH_015", "MH_020", "MH_028", "MH_008", "MH_027", "MH_029"]
+    },
+    {
+      "id": "MH_DIS_14",
+      "name": "Seasonal Affective Disorder (SAD)",
+      "symptoms": ["MH_001", "MH_008", "MH_007", "MH_006", "MH_017", "MH_016", "MH_022", "MH_024"]
+    },
+    {
+      "id": "MH_DIS_15",
+      "name": "Stress Management Issues",
+      "symptoms": ["MH_002", "MH_006", "MH_008", "MH_009", "MH_003", "MH_018", "MH_030", "MH_031", "MH_032"]
+    }
+  ],
+
+  "treatments": {
+    "MH_DIS_01": {
+      "allopathy": ["Antidepressants (as prescribed by doctor)", "Therapy sessions (weekly)", "Regular follow-ups with psychiatrist"],
+      "homeopathy": ["Ignatia 30C (2 pills twice daily)", "Natrum Mur 30C (2 pills twice daily)", "Aurum Met 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Ashwagandha powder (1 teaspoon with milk twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)"],
+      "home_remedy": "Daily exercise, sunlight exposure, social connection, gratitude journaling, balanced diet"
+    },
+    "MH_DIS_02": {
+      "allopathy": ["Anti-anxiety medication (as prescribed)", "Therapy (cognitive behavioral therapy)", "Breathing exercises practice"],
+      "homeopathy": ["Argentum Nitricum 30C (2 pills twice daily)", "Gelsemium 30C (2 pills twice daily)", "Kali Phos 6X (2 pills 3 times daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Shankhapushpi syrup (1 teaspoon twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)"],
+      "home_remedy": "Deep breathing exercises, regular meditation, limit caffeine, structured routine, nature walks"
+    },
+    "MH_DIS_03": {
+      "allopathy": ["Anti-anxiety medication (as prescribed)", "Therapy for panic management", "Breathing techniques training"],
+      "homeopathy": ["Aconitum 30C (2 pills during panic attack)", "Argentum Nitricum 30C (2 pills twice daily)", "Kali Phos 6X (2 pills 3 times daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Sarpagandha Vati (1 tablet twice daily)", "Ashwagandha powder (1 teaspoon with milk)"],
+      "home_remedy": "Grounding techniques during attacks, regular exercise, avoid triggers, breathing exercises, support system"
+    },
+    "MH_DIS_04": {
+      "allopathy": ["Anti-anxiety medication (as prescribed)", "Exposure therapy", "Social skills training"],
+      "homeopathy": ["Gelsemium 30C (2 pills before social events)", "Silicea 30C (2 pills twice daily)", "Lycopodium 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Ashwagandha powder (1 teaspoon twice daily)", "Shankhapushpi syrup (1 teaspoon twice daily)"],
+      "home_remedy": "Gradual exposure to social situations, positive self-talk, breathing exercises, join support groups"
+    },
+    "MH_DIS_05": {
+      "allopathy": ["SSRI medications (as prescribed)", "Cognitive behavioral therapy", "Exposure response prevention"],
+      "homeopathy": ["Arsenicum Album 30C (2 pills twice daily)", "Syphilinum 30C (2 pills weekly)", "Medorrhinum 30C (2 pills weekly)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)", "Shankhapushpi syrup (1 teaspoon twice daily)"],
+      "home_remedy": "Mindfulness meditation, delay compulsive behaviors, stress management, structured routine"
+    },
+    "MH_DIS_06": {
+      "allopathy": ["Trauma-focused therapy", "Medications (as prescribed)", "EMDR therapy"],
+      "homeopathy": ["Staphysagria 30C (2 pills twice daily)", "Ignatia 30C (2 pills twice daily)", "Natrum Mur 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Ashwagandha powder (1 teaspoon twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)"],
+      "home_remedy": "Trauma-informed yoga, grounding techniques, safe environment, support groups, creative expression"
+    },
+    "MH_DIS_07": {
+      "allopathy": ["Mood stabilizers (as prescribed by psychiatrist)", "Regular therapy sessions", "Mood tracking"],
+      "homeopathy": ["Aurum Met 30C (2 pills twice daily)", "Natrum Mur 30C (2 pills twice daily)", "Lachesis 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Sarpagandha Vati (1 tablet twice daily)", "Ashwagandha powder (1 teaspoon twice daily)"],
+      "home_remedy": "Regular sleep schedule, mood journaling, stress reduction, avoid alcohol/drugs, support network"
+    },
+    "MH_DIS_08": {
+      "allopathy": ["Stimulant medications (as prescribed)", "Behavioral therapy", "Organizational skills training"],
+      "homeopathy": ["Tuberculinum 30C (2 pills weekly)", "Medorrhinum 30C (2 pills weekly)", "Stramonium 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Shankhapushpi syrup (1 teaspoon twice daily)", "Vacha powder (1/4 teaspoon twice daily)"],
+      "home_remedy": "Structured routine, break tasks into steps, regular exercise, minimize distractions, use planners"
+    },
+    "MH_DIS_09": {
+      "allopathy": ["Sleep hygiene education", "Cognitive behavioral therapy for insomnia", "Sleep restriction therapy"],
+      "homeopathy": ["Coffea Cruda 30C (2 pills at bedtime)", "Nux Vomica 30C (2 pills at bedtime)", "Passiflora 30C (2 pills at bedtime)"],
+      "ayurveda": ["Tagara powder (1/2 teaspoon with warm milk at bedtime)", "Ashwagandha powder (1 teaspoon with milk at bedtime)", "Brahmi Vati (2 tablets at bedtime)"],
+      "home_remedy": "Consistent sleep schedule, no screens before bed, relaxing bedtime routine, comfortable sleep environment"
+    },
+    "MH_DIS_10": {
+      "allopathy": ["Short-term therapy", "Supportive counseling", "Stress management techniques"],
+      "homeopathy": ["Ignatia 30C (2 pills twice daily)", "Natrum Mur 30C (2 pills twice daily)", "Gelsemium 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Ashwagandha powder (1 teaspoon twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)"],
+      "home_remedy": "Talk about feelings, maintain routine, healthy coping strategies, social support, time for adjustment"
+    },
+    "MH_DIS_11": {
+      "allopathy": ["Stress management therapy", "Work-life balance counseling", "Relaxation techniques training"],
+      "homeopathy": ["Kali Phos 6X (2 pills 3 times daily)", "Picric Acid 30C (2 pills twice daily)", "Anacardium 30C (2 pills twice daily)"],
+      "ayurveda": ["Ashwagandha powder (1 teaspoon twice daily)", "Brahmi Vati (2 tablets twice daily)", "Shankhapushpi syrup (1 teaspoon twice daily)"],
+      "home_remedy": "Set boundaries, take regular breaks, prioritize self-care, delegate tasks, practice saying no"
+    },
+    "MH_DIS_12": {
+      "allopathy": ["Exposure therapy", "Anti-anxiety medication (if needed)", "Relaxation techniques"],
+      "homeopathy": ["Argentum Nitricum 30C (2 pills twice daily)", "Gelsemium 30C (2 pills twice daily)", "Aconitum 30C (2 pills during fear)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)", "Ashwagandha powder (1 teaspoon twice daily)"],
+      "home_remedy": "Gradual exposure to fear, breathing exercises, positive visualization, support from trusted person"
+    },
+    "MH_DIS_13": {
+      "allopathy": ["Nutritional counseling", "Therapy (CBT or DBT)", "Medical monitoring"],
+      "homeopathy": ["Carcinosin 30C (2 pills twice daily)", "Natrum Mur 30C (2 pills twice daily)", "Ignatia 30C (2 pills twice daily)"],
+      "ayurveda": ["Ashwagandha powder (1 teaspoon twice daily)", "Brahmi Vati (2 tablets twice daily)", "Chyawanprash (1 teaspoon twice daily)"],
+      "home_remedy": "Regular balanced meals, mindful eating, address emotional triggers, support groups, professional help"
+    },
+    "MH_DIS_14": {
+      "allopathy": ["Light therapy (30 minutes daily)", "Antidepressants (if needed)", "Regular exercise"],
+      "homeopathy": ["Sepia 30C (2 pills twice daily)", "Natrum Carb 30C (2 pills twice daily)", "Kali Carb 30C (2 pills twice daily)"],
+      "ayurveda": ["Ashwagandha powder (1 teaspoon twice daily)", "Brahmi Vati (2 tablets twice daily)", "Chyawanprash (1 teaspoon twice daily)"],
+      "home_remedy": "Morning sunlight exposure, regular exercise, vitamin D supplements, social activities, light therapy lamp"
+    },
+    "MH_DIS_15": {
+      "allopathy": ["Stress management therapy", "Relaxation techniques training", "Time management counseling"],
+      "homeopathy": ["Kali Phos 6X (2 pills 3 times daily)", "Argentum Nitricum 30C (2 pills twice daily)", "Nux Vomica 30C (2 pills twice daily)"],
+      "ayurveda": ["Brahmi Vati (2 tablets twice daily)", "Ashwagandha powder (1 teaspoon twice daily)", "Jatamansi powder (1/2 teaspoon twice daily)"],
+      "home_remedy": "Regular exercise, meditation practice, healthy boundaries, time management, relaxation techniques"
+    }
+  }
+}
